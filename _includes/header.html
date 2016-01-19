@@ -1,0 +1,13 @@
+<header class="header">
+  {% if page.url == "/" %}
+    <h1 class="header__title">
+      <a href="{{ site.baseurl }}/" class="header__logo" title="{{ site.title }}">
+        {{ site.title }}
+      </a>
+    </h1>
+  {% else %}
+    <a href="{{ site.baseurl }}/" class="header__logo" title="{{ site.title }}">
+      {{ site.title }}
+    </a>
+  {% endif %}
+</header>

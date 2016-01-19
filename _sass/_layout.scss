@@ -1,0 +1,8 @@
+.wrap {
+  width: $content-width;
+  margin: 0 auto;
+
+  @media screen and (max-width: $content-width) {
+    max-width: 100%;
+  }
+}

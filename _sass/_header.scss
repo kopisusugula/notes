@@ -1,0 +1,42 @@
+.header {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding: 2.5rem 0;
+  margin-bottom: 2rem;
+
+  @media screen and (max-width: $content-width) {
+    padding: 1.5rem 0;
+    margin-bottom: 1.75rem;
+  }
+}
+
+.header__title {
+  margin: 0;
+}
+
+.header__link {
+  color: #333;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 2.5rem;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: $content-width) {
+    font-size: 1.75rem;
+  }
+}
+
+.header__logo {
+  display: inline-block;
+  height: 4.5rem;
+  width: 4.5rem;
+  text-indent: -9999px;
+
+  background-size: cover;
+  background-image: url('../img/logo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}

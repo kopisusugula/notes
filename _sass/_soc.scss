@@ -1,0 +1,52 @@
+.soc {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.soc__item {
+  display: inline-block;
+  margin: 0 .25rem;
+
+  @media screen and (max-width: $content-width) {
+    display: block;
+    margin: 1.5rem 0;
+  }
+}
+
+.soc__link {
+  display: block;
+  color: #fff;
+  font-size: .85rem;
+  padding: .25rem .5rem;
+  border-radius: 4px;
+  line-height: 1;
+
+  &:hover {
+    text-decoration: none;
+    opacity: .7;
+  }
+}
+
+.soc__icon {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.25rem;
+  margin-right: .35rem;
+}
+
+.soc__link--twitter {
+  color: #55acee;
+}
+
+.soc__link--linkedin {
+  color: #0077b5;
+}
+
+.soc__link--github {
+  color: #333;
+}
+
+.soc__link--rss {
+  color: #f26522;
+}

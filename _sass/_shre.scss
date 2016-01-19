@@ -1,0 +1,41 @@
+.shre {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.shre__item {
+  display: inline-block;
+  margin: .25rem;
+}
+
+.shre__link {
+  display: block;
+  border-radius: 4px;
+  color: #fff;
+  padding: .25rem .75rem;
+  font-size: .85rem;
+
+  &:hover {
+    text-decoration: none;
+    opacity: .8;
+  }
+}
+
+.shre__icon {
+  display: inline-block;
+  margin-right: .25rem;
+}
+
+.shre__link--twitter {
+  background-color: #55acee;
+}
+
+.shre__link--linkedin {
+  background-color: #0077b5;
+}
+
+.shre__link--facebook {
+  background-color: #3b5998;
+}

@@ -1,0 +1,26 @@
+title: Notes - Jordan Danielewski
+email: contact@jordandanielewski.com
+description: Write an awesome description for your new site here.
+baseurl: ""
+url: https://notes.jordandanielewski.com
+github: jordandanielewski
+linkedin: jordandanielewski
+twitter: jordanielewski
+google_analytics: UA-71716125-2
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - no_intra_emphasis
+    - space_after_headers
+permalink: /:title/
+exclude: [README.md, Gemfile, Gemfile.lock]
+sass:
+  style: compressed
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      author:
+        name: Jordan Danielewski
+        url: https://jordandanielewski.com

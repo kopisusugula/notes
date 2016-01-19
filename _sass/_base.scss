@@ -1,0 +1,149 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $base-font-family;
+  line-height: $base-line-height;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  word-wrap: break-word;
+
+  @media screen and (max-width: $content-width) {
+    font-size: 1rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
+
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: $small-font-size;
+}
+
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.25;
+  font-family: "Ubuntu", sans-serif;;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+blockquote {
+  color: #999;
+  border-left: .25rem solid #d0d0d0;
+  padding-left: $spacing-unit / 2;
+  font-size: 1.25rem;
+  font-style: italic;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: $content-width) {
+    font-size: 1.125rem;
+  }
+}
+
+pre,
+code {
+  font-size: 0.95rem;
+  border-radius: 3px;
+  background-color: #F7FAFB;
+  border: 1px solid #E3EDF3;
+  font-family: "Source Code Pro", monospace;
+
+  @media screen and (max-width: $content-width) {
+    font-size: 0.85rem;
+  }
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: .5rem .75rem;
+  overflow-x: auto;
+  word-wrap: normal;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: #EFEFEF 1px solid;
+  margin: 3.2em 0;
+  padding: 0;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+%clearfix {
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

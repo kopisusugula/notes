@@ -1,0 +1,11 @@
+.footer {
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 2rem;
+  border-top: 1px solid #eee;
+
+  @media screen and (max-width: $content-width) {
+    margin-top: 1.75rem;
+  }
+}

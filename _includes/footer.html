@@ -1,0 +1,28 @@
+<footer class="footer">
+  <ul class="soc">
+    <li class="soc__item">
+      <a href="https://twitter.com/{{ site.twitter }}" class="soc__link soc__link--twitter" target="_blank" rel="nofollow">
+        <i class="fa fa-twitter soc__icon"></i>
+        {{ site.twitter }}
+      </a>
+    </li>
+    <li class="soc__item">
+      <a href="https://github.com/{{ site.github }}" class="soc__link soc__link--github" target="_blank" rel="nofollow">
+        <i class="fa fa-github soc__icon"></i>
+        {{ site.github }}
+      </a>
+    </li>
+    <li class="soc__item">
+      <a href="https://linkedin.com/in/{{ site.linkedin }}" class="soc__link soc__link--linkedin" target="_blank" rel="nofollow">
+        <i class="fa fa-linkedin-square soc__icon"></i>
+        {{ site.linkedin }}
+      </a>
+    </li>
+    <li class="soc__item">
+      <a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" class="soc__link soc__link--rss" target="_blank" rel="nofollow">
+        <i class="fa fa-rss-square soc__icon"></i>
+        RSS
+      </a>
+    </li>
+  </ul>
+</footer>
