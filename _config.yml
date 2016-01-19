@@ -1,6 +1,7 @@
-title: Notes - Jordan Danielewski
+title: Notes
+author: Jordan Danielewski
 email: contact@jordandanielewski.com
-description: Write an awesome description for your new site here.
+description: "Notes et courts articles autour du développement: Ruby, Javascript, NodeJS, HTML, CSS..."
 baseurl: ""
 url: https://notes.jordandanielewski.com
 github: jordandanielewski
