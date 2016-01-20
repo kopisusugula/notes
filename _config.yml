@@ -10,7 +10,7 @@ twitter: jordanielewski
 google_analytics: UA-71716125-2
 markdown: redcarpet
 permalink: /:title/
-exclude: [README.md, Gemfile, Gemfile.lock]
+exclude: ["README.md", "Gemfile", "Gemfile.lock"]
 sass:
   style: compressed
 defaults:
