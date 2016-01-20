@@ -60,4 +60,4 @@ Les utilités peuvent être multiples:
 - pour une application collaborative en temps réel: on peut notifier les autres utilisateurs que leur collègue a été déconnecté
 - au moment de la déconnexion, on peut sauvegarder les changements qui vont être faits par l'utilisateur en utilisant `localStorage` et les envoyer sur le serveur distant une fois qu'il revient en ligne
 - empêcher l'utilisateur d'envoyer un message dans un tchat si il est déconnecté
-- dans une application mobile hybride, vous pouvez prévenir que l'utilisateur ne pourra pas correctement profiter de toutes les fonctionnalités si il n'est pas connecté
+- dans une application mobile hybride, vous pouvez prévenir l'utilisateur qu'il ne pourra pas correctement profiter de toutes les fonctionnalités s'il n'est pas connecté
