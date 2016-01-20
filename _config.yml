@@ -11,6 +11,8 @@ google_analytics: UA-71716125-2
 markdown: redcarpet
 redcarpet:
   extensions:
+    - fenced_code_blocks
+    - disable_indented_code_blocks
     - no_intra_emphasis
     - space_after_headers
 permalink: /:title/
