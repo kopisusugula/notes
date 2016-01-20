@@ -8,7 +8,7 @@ permalink: /detecter-perte-connexion-internet-javascript/
 
 Lorsque l'on développe une [SPA](https://fr.wikipedia.org/wiki/Application_web_monopage), il peut être utile de vérifier en permanence que l'utilisateur soit bien connecté à Internet. En effet, si l'utilisateur perd sa connexion il aura l'impression que votre application ne fonctionne pas correctement. Il faut donc le prévenir qu'il a un problème de connexion.
 
-C'est ce que fait Gmail par exemple:
+C'est ce que Gmail fait par exemple:
 
 ![Gmail hors-ligne](/uploads/2016-01-19-detecter-perte-connexion-internet-javascript/gmail.png)
 
