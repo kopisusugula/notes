@@ -22,7 +22,7 @@ layout: default
     {{ content }}
   </div>
   <footer class="post__footer">
-    <div class="shre">
+    <ul class="shre">
       <li class="shre__item">
         <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&amp;url={{ page.url | prepend: site.baseurl | prepend: site.url | uri_escape }}&amp;via={{ site.twitter }}&amp;hashtags={{ page.category }}" class="shre__link shre__link--twitter" rel="nofollow" target="_blank">
           <i class="fa fa-twitter shre__icon"></i>
@@ -41,7 +41,7 @@ layout: default
           Partager
         </a>
       </li>
-    </div>
+    </ul>
   </footer>
 </article>
 
