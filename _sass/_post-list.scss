@@ -53,7 +53,7 @@
 .post-list__title {
   margin: 0;
   margin-bottom: 0;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 
   @media screen and (max-width: $content-width) {
     font-size: 1rem;
@@ -62,7 +62,13 @@
 
 .post-list__link {
   color: #333;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
+
+  &:hover {
+    text-decoration: none;
+    background-color: #ff6;
+    border: 0;
+  }
 
   @media screen and (max-width: $content-width) {
     font-size: 1rem;
@@ -70,10 +76,10 @@
 }
 
 .post-list__meta {
-  color: #999;
-  font-size: .9rem;
+  color: rgba(0,0,0,.3);
+  font-size: 1rem;
 
   @media screen and (max-width: $content-width) {
-    font-size: .75rem;
+    font-size: .85rem;
   }
 }
