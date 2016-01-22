@@ -24,19 +24,19 @@ layout: default
   <footer class="post__footer">
     <ul class="shre">
       <li class="shre__item">
-        <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&amp;url={{ page.url | prepend: site.baseurl | prepend: site.url | uri_escape }}&amp;via={{ site.twitter }}&amp;hashtags={{ page.category }}" class="shre__link shre__link--twitter" rel="nofollow" target="_blank">
+        <a href="https://twitter.com/intent/tweet?text={{ page.title | cgi_escape }}&amp;url={{ page.url | prepend: site.baseurl | prepend: site.url | cgi_escape }}&amp;via={{ site.twitter }}&amp;hashtags={{ page.category }}" class="shre__link shre__link--twitter" rel="nofollow" target="_blank">
           <i class="fa fa-twitter shre__icon"></i>
           Tweeter
         </a>
       </li>
       <li class="shre__item">
-        <a href="https://www.linkedin.com/shareArticle?title={{ page.title | uri_escape }}&amp;url={{ page.url | prepend: site.baseurl | prepend: site.url | uri_escape }}&amp;mini=true&amp;summary={{ page.excerpt | strip_html | strip_newlines | truncate: 160 | uri_escape }}" class="shre__link shre__link--linkedin" target="_blank" rel="nofollow">
+        <a href="https://www.linkedin.com/shareArticle?title={{ page.title | cgi_escape }}&amp;url={{ page.url | prepend: site.baseurl | prepend: site.url | cgi_escape }}&amp;mini=true&amp;summary={{ page.excerpt | strip_html | strip_newlines | truncate: 160 | cgi_escape }}" class="shre__link shre__link--linkedin" target="_blank" rel="nofollow">
           <i class="fa fa-linkedin shre__icon"></i>
           Partager
         </a>
       </li>
       <li class="shre__item">
-        <a href="http://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.baseurl | prepend: site.url | uri_escape }}" class="shre__link shre__link--facebook" target="_blank" rel="nofollow">
+        <a href="http://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.baseurl | prepend: site.url | cgi_escape }}" class="shre__link shre__link--facebook" target="_blank" rel="nofollow">
           <i class="fa fa-facebook shre__icon"></i>
           Partager
         </a>
