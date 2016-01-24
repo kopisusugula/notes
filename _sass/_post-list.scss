@@ -25,6 +25,10 @@
   }
 }
 
+.post-list__item--faded {
+  opacity: .25;
+}
+
 .post-list__category {
   display: table-cell;
   vertical-align: middle;
