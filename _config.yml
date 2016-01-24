@@ -8,10 +8,9 @@ github: jordandanielewski
 linkedin: jordandanielewski
 twitter: jordanielewski
 google_analytics: UA-71716125-2
-markdown: redcarpet
-redcarpet:
-  extensions:
-    - no_intra_emphasis
+markdown: kramdown
+kramdown:
+  input: GFM
 permalink: /:title/
 exclude: ["README.md", "Gemfile", "Gemfile.lock"]
 sass:
