@@ -12,7 +12,8 @@ layout: default
         {{ page.date | date: "%d/%m/%Y" }}
       </time>
       <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <a href="{{ page.author.url }}" target="_blank">
+        <a href="{{ page.author.url }}" target="_blank" itemprop="url">
+          <img src="/assets/img/pic.jpg" alt="{{ page.author.name }}" class="post__author-pic" itemprop="image" />
           <span itemprop="name">{{ page.author.name }}</span>
         </a>
       </span>

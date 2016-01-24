@@ -39,8 +39,15 @@
   &:after {
     display: inline;
     content: '–';
-    margin: 0 0.25rem;
+    margin: 0 0.5rem;
   }
+}
+
+.post__author-pic {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 1.5rem;
 }
 
 .post__content {
