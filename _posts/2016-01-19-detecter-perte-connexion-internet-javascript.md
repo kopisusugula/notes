@@ -32,11 +32,11 @@ L'objet `window` est doté de deux événements: `online` et `offline`, il suffi
 
 ```javascript
 window.addEventListener('online', function() {
-	console.log('Connecté');
+  console.log('Connecté');
 });
 
 window.addEventListener('offline', function() {
-	console.log('Déconnecté');
+  console.log('Déconnecté');
 });
 ```
 
