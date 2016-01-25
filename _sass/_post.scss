@@ -48,6 +48,12 @@
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 1.5rem;
+  vertical-align: middle;
+
+  background-size: cover;
+  background-image: url('../img/pic.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .post__content {
