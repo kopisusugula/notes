@@ -4,6 +4,7 @@ title: Détecter la perte de connexion Internet en Javascript
 date: 2016-01-19 21:30
 category: javascript
 permalink: /detecter-perte-connexion-internet-javascript/
+image: /uploads/2016-01-19-detecter-perte-connexion-internet-javascript/browser-support.png
 ---
 
 Lorsque l'on développe une [SPA](https://fr.wikipedia.org/wiki/Application_web_monopage), il peut être utile de vérifier en permanence que l'utilisateur soit bien connecté à Internet. En effet, si l'utilisateur perd sa connexion il aura l'impression que votre application ne fonctionne pas correctement. Il faut donc le prévenir qu'il a un problème de connexion.

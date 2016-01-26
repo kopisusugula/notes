@@ -25,13 +25,25 @@
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:site_name" content="{{ site.title | xml_escape }}">
 
+  {% if page.image %}
+  <meta property="og:image" content="{{ page.image | prepend: site.baseurl | prepend: site.url }}" />
+  {% endif %}
+
+  {% if page.date %}
+  	<meta property="og:type" content="article" />
+  {% endif %}
+
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="{{ site.twitter | prepend: '@' }}" />
   <meta name="twitter:title" content="{% if page.title %}{{ page.title | truncate: 70 }}{% else %}{{ site.title | truncate: 70 }}{% endif %}" />
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 
-  {% if page.url != "/index.html" %}
-  	<meta property="og:type" content="article" />
+  {% if page.image %}
+    <meta name="twitter:image" content="{{ page.image | prepend: site.baseurl | prepend: site.url | escape }}" />
+  {% endif %}
+
+  {% if page.author.twitter %}
+    <meta name="twitter:creator" content="{{ page.author.twitter | replace:"@","" | prepend:"@" }}" />
   {% endif %}
 
   {% if jekyll.environment == "production" %}
