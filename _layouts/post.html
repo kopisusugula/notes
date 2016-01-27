@@ -3,10 +3,6 @@ layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  {% if page.image %}
-    <meta itemprop="image" content="{{ page.image | prepend: site.baseurl | prepend: site.url }}">
-  {% endif %}
-
   <header class="post__header">
     <h1 class="post__title" itemprop="name headline">
       {{ page.title }}
@@ -15,8 +11,8 @@ layout: default
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="post__date">
         {{ page.date | date: "%d/%m/%Y" }}
       </time>
-      <span itemprop="author publisher" itemscope itemtype="http://schema.org/Person">
-        <img src="{{ page.author.photo }}" class="post__author-pic" alt="{{ page.author.name }}" itemprop="image logo" />
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <img src="{{ page.author.photo }}" class="post__author-pic" alt="{{ page.author.name }}" itemprop="image" />
         <a href="{{ page.author.url }}" target="_blank" itemprop="url">
           <span itemprop="name">{{ page.author.name }}</span>
         </a>
