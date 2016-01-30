@@ -4,6 +4,7 @@ title: Créer des outils en ligne de commande avec NodeJS
 date: 2016-01-30 21:30
 category: nodejs
 permalink: /creer-des-outils-en-ligne-commande-avec-nodejs/
+image: /uploads/2016-01-30-creer-des-outils-en-ligne-commande-avec-nodejs/blessed-contrib.gif
 ---
 
 NodeJS permet de créer facilement et rapidement des outils en ligne de commande (CLI). On peut d'ailleurs constater que beaucoup d'outils utilisent NodeJS: [yeoman](https://github.com/yeoman/yo), [browserify](https://www.npmjs.com/package/browserify), [grunt](https://github.com/gruntjs/grunt), [gulp](https://github.com/gulpjs/gulp), [bower](https://github.com/bower/bower), [less](https://github.com/less/less.js) et même [NPM](https://github.com/npm/npm).
