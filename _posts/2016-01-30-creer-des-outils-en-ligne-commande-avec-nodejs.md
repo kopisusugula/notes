@@ -54,7 +54,7 @@ Le [shebang](https://fr.wikipedia.org/wiki/Shebang) est obligatoire pour dire au
 
 ## Installation
 
-Exécutez `npm link`. NPM va créer un lien symbolique global vers votre dossier. Cela produira le même effet que si vous aviez publié votre package sur NPM et ue vous aviez fait un `npm install nom-de-commande --global`.
+Exécutez `npm link`. NPM va créer un lien symbolique global vers votre dossier. Cela produira le même effet que si vous aviez publié votre package sur NPM et que vous aviez fait un `npm install nom-de-commande --global`.
 
 Résultat:
 
