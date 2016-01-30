@@ -92,3 +92,14 @@
   margin: 2rem 0;
   padding: 1.5rem 0;
 }
+
+.post__anchor {
+  color: #ccc;
+  font-weight: normal;
+  font-size: 90%;
+
+  &:hover {
+    color: #555;
+    border: none;
+  }
+}

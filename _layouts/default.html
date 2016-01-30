@@ -16,6 +16,13 @@
     {% include footer.html %}
 
     <script src="/assets/js/prism.js"></script>
+    <script src="/assets/js/anchor.min.js"></script>
+
+    <script>
+    anchors.options.visible = 'always';
+    anchors.options.class = 'post__anchor';
+    anchors.add('.post__content > h1, .post__content > h2, .post__content > h3, .post__content > h4, .post__content > h5, .post__content > h6');
+    </script>
 
   </body>
 
