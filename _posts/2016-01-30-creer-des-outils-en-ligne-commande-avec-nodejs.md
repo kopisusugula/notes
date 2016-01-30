@@ -270,7 +270,7 @@ Pour vous donner une idée de ce qui est faisable avec Blessed, vous pouvez rega
 
 ![Slap](/uploads/2016-01-30-creer-des-outils-en-ligne-commande-avec-nodejs/slap.png)
 
-Vous pouvez également vous aider de [blessed-contrib](https://github.com/yaronn/blessed-contrib), un module qui va vous permettre de faire des dashboards, pour un résultat assez impresionant:
+Vous pouvez également vous aider de [blessed-contrib](https://github.com/yaronn/blessed-contrib), un module qui va vous permettre de faire des dashboards, pour un résultat assez impressionnant:
 
 ![Blessed-contrib](/uploads/2016-01-30-creer-des-outils-en-ligne-commande-avec-nodejs/blessed-contrib.gif)
 
