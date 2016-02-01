@@ -25,7 +25,7 @@ Dans un nouveau dossier, exécutez `npm init` afin de générer un `package.json
 
 **package.json**
 
-```json
+{% highlight json %}
 {
   "name": "nom-de-commande",
   "version": "1.0.0",
@@ -40,15 +40,15 @@ Dans un nouveau dossier, exécutez `npm init` afin de générer un `package.json
   },
   "preferGlobal": true
 }
-```
+{% endhighlight %}
 
 **fichier.js**
 
-```javascript
+{% highlight javascript %}
 #!/usr/bin/env node
 
 console.log('Hello World');
-```
+{% endhighlight %}
 
 Le [shebang](https://fr.wikipedia.org/wiki/Shebang) est obligatoire pour dire au shell comment exécuter le script.
 
@@ -58,7 +58,7 @@ Exécutez `npm link`. NPM va créer un lien symbolique global vers votre dossier
 
 Résultat:
 
-```bash
+{% highlight shell %}
 $ npm link
 npm WARN EPACKAGEJSON nom-de-commande@1.0.0 No description
 npm WARN EPACKAGEJSON nom-de-commande@1.0.0 No repository field.
@@ -67,7 +67,7 @@ npm WARN EPACKAGEJSON nom-de-commande@1.0.0 No repository field.
 
 $ nom-de-commande
 Hello World
-```
+{% endhighlight %}
 
 Vous n'avez pas besoin de refaire un `npm link` si vous modifiez vos scripts. Par contre vous devrez relancer cette commande si:
 
@@ -83,13 +83,13 @@ Une manière simple de récupérer les arguments est d'utiliser `process.argv`.
 
 `process.argv` renvoie un tableau dont les deux premiers éléments sont le chemin vers `node` et le chemin vers notre commande `nom-de-commande`. Les éléments suivants seront les arguments passés à notre commande. Le premier argument est donc `process.argv[2]`.
 
-```bash
+{% highlight shell %}
 $ nom-de-commande one two
 [ '/Users/jd/.nvm/versions/node/v5.4.1/bin/node',
   '/Users/jd/.nvm/versions/node/v5.4.1/bin/nom-de-commande',
   'one',
   'two' ]
-```
+{% endhighlight %}
 
 Utiliser directement `process.argv` pose plusieurs problèmes:
 
@@ -101,22 +101,24 @@ Pour contrer ces problèmes vous pouvez utiliser [minimist](https://www.npmjs.co
 
 Avec [minimist](https://www.npmjs.com/package/minimist),
 
-```bash
+{% highlight shell %}
 $ nom-de-commande -x 3 -y 4 -n5 -abc --beep=boop foo bar baz
-```
+{% endhighlight %}
 
 retournerait un objet du type:
 
-```javascript
-{ _: [ 'foo', 'bar', 'baz' ],
+{% highlight shell %}
+{
+  _: [ 'foo', 'bar', 'baz' ],
   x: 3,
   y: 4,
   n: 5,
   a: true,
   b: true,
   c: true,
-  beep: 'boop' }
-```
+  beep: 'boop'
+}
+{% endhighlight %}
 
 C'est quand même beaucoup plus pratique que de s'amuser à parser un tableau !
 
@@ -141,21 +143,21 @@ Actuellement, que se passe t-il si on envoie des informations en entrée via un 
 
 **fichier.js**
 
-```javascript
+{% highlight javascript %}
 #!/usr/bin/env node
 
 // Nothing
-```
+{% endhighlight %}
 
-```bash
+{% highlight shell %}
 $ echo "foo" | nom-de-commande
-```
+{% endhighlight %}
 
 Il ne se passe rien car on ne fait rien avec l'information passée par le `|`. Nous devons écouter le flux d'entrée standard et traiter ce que l'on reçoit.
 
 **fichier.js**
 
-```javascript
+{% highlight javascript %}
 #!/usr/bin/env node
 
 process.stdin.setEncoding('utf8');
@@ -170,24 +172,24 @@ process.stdin.on('readable', () => {
 process.stdin.on('end', () => {
   // No more data
 });
-```
+{% endhighlight %}
 
 Réessayons:
 
-```bash
+{% highlight shell %}
 $ echo "foo" | nom-de-commande
 foo
-```
+{% endhighlight %}
 
 Pour les versions de NodeJS antérieures à 0.10, l'API est légèrement différente:
 
-```javascript
+{% highlight javascript %}
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
 process.stdin.on('data', function(data) {
   process.stdout.write(data);
 });
-```
+{% endhighlight %}
 
 Vous trouverez plus d'informations dans [la documentation de `process.stdin`](https://nodejs.org/api/process.html#process_process_stdin).
 
@@ -195,22 +197,22 @@ Nous venons de voir comment traiter l'information que l'on envoie sur l'entrée 
 
 **fichier.js**
 
-```javascript
+{% highlight javascript %}
 #!/usr/bin/env node
 
 console.log('Hello world'); // ou process.stdout.write('Hello world\n');
-```
+{% endhighlight %}
 
-```bash
+{% highlight shell %}
 $ nom-de-commande | grep -o 'world'
 world
-```
+{% endhighlight %}
 
 ## Appeler d'autres commandes
 
 Vous pouvez appeler n'importe quelle autre commande grâce aux processus fils ou _child process_.
 
-```javascript
+{% highlight javascript %}
 #!/usr/bin/env node
 
 var exec = require('child_process').exec;
@@ -218,11 +220,11 @@ var exec = require('child_process').exec;
 var child = exec('ls -la', function(err, stdout, stderr) {
   console.log(stdout);
 });
-```
+{% endhighlight %}
 
 Résultat:
 
-```bash
+{% highlight shell %}
 $ nom-de-commande
 total 16
 drwxr-xr-x   5 jd  staff  170 Jan 28 22:31 .
@@ -230,7 +232,7 @@ drwxr-xr-x  29 jd  staff  986 Jan 28 22:29 ..
 -rwxr-xr-x   1 jd  staff  149 Jan 29 11:10 fichier.js
 drwxr-xr-x   2 jd  staff   68 Jan 28 22:33 node_modules
 -rw-r--r--   1 jd  staff  283 Jan 28 22:36 package.json
-```
+{% endhighlight %}
 
 En revanche il faut faire attention car ce n'est pas forcément toujours portable. La création de processus sur Linux, OSX ou Windows peut être très différente, et les commandes à appeler également.
 
@@ -244,11 +246,11 @@ Si vous voulez ajouter des couleurs de ce que vous affichez, vous pouvez utilise
 
 L'utilisation est très simple:
 
-```javascript
+{% highlight javascript %}
 const chalk = require('chalk');
 
 console.log(chalk.blue('Hello world!'));
-```
+{% endhighlight %}
 
 Ce module permet également de styliser le texte: gras, italique, souligné, couleur de fond...
 

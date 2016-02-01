@@ -17,13 +17,13 @@ C'est ce que Gmail fait par exemple:
 
 La propriété `navigator.onLine` renvoie un booléen qui dépend de l'état de la connexion de l'utilisateur.
 
-```javascript
+{% highlight javascript %}
 if(navigator.onLine) {
   // Connecté
 } else {
   // Non connecté
 }
-```
+{% endhighlight %}
 
 ## Événements
 
@@ -31,7 +31,7 @@ Vérifier une seule fois la valeur de `navigator.onLine` présente un interêt l
 
 L'objet `window` est doté de deux événements: `online` et `offline`, il suffit alors de les écouter pour être prévenu instantanément d'un changement:
 
-```javascript
+{% highlight javascript %}
 window.addEventListener('online', function() {
   console.log('Connecté');
 });
@@ -39,7 +39,7 @@ window.addEventListener('online', function() {
 window.addEventListener('offline', function() {
   console.log('Déconnecté');
 });
-```
+{% endhighlight %}
 
 ## Un exemple
 
