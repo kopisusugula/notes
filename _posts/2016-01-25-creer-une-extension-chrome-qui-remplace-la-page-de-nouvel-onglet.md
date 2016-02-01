@@ -25,7 +25,7 @@ Dans un dossier, créez un fichier appelé `manifest.json`. Ce fichier permet de
 
 Commencez par faire un fichier basique qui permettra de tester votre extension dès maintenant:
 
-{% highlight json %}
+```json
 {
   "manifest_version": 2,
   "name": "Mon nouvel onglet",
@@ -33,7 +33,7 @@ Commencez par faire un fichier basique qui permettra de tester votre extension d
   "author": "Jordan Danielewski",
   "version": "0.0.1"
 }
-{% endhighlight %}
+```
 
 `manifest_version` permet à Chrome de savoir quel format de _Manifest_ est utilisé par votre extension. Depuis Chrome 18, il faut obligatoirement utiliser la version `2`. Vous trouverez plus d'informations dans la [documentation de `manifest_version`](https://developer.chrome.com/extensions/manifestVersion).
 
@@ -59,7 +59,7 @@ Dans le même dossier qui contient le `manifest.json`, créez un fichier `newtab
 
 Ce fichier correspondra à une page HTML classique, comme si vous feriez une page de site web.
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -70,11 +70,11 @@ Ce fichier correspondra à une page HTML classique, comme si vous feriez une pag
     <h1>Mon nouvel onglet</h1>
   </body>
 </html>
-{% endhighlight %}
+```
 
 Vous devez également signaler à Chrome qu'il doit utiliser ce fichier, cela se passe dans le _Manifest_ grâce à la clé `chrome_url_overrides`:
 
-{% highlight json %}
+```json
 {
   "manifest_version": 2,
   "name": "Mon nouvel onglet",
@@ -85,7 +85,7 @@ Vous devez également signaler à Chrome qu'il doit utiliser ce fichier, cela se
     "newtab": "newtab.html"
   }
 }
-{% endhighlight %}
+```
 
 Il est possible de remplacer la clé `newtab` par `bookmarks` si vous voulez remplacer la page des favoris ou par `history` si vous voulez remplacer la page de l'historique.
 
@@ -107,7 +107,7 @@ Pour l'exemple, nous utiliserons l'API de [Giphy](http://giphy.com/) pour affich
 
 Pour récupérer un `.gif` au hasard, il faudra appeler l'url `http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cat`. Un JSON qui contient les informations du `.gif` vous sera alors renvoyé:
 
-{% highlight json %}
+```json
 {
   "data": {
     "type": "gif",
@@ -141,7 +141,7 @@ Pour récupérer un `.gif` au hasard, il faudra appeler l'url `http://api.giphy.
     "msg": "OK"
   }
 }
-{% endhighlight %}
+```
 
 La clé d'API `dc6zaTOxFJmzC` est publique. Elle doit être utilisée uniquement lors du développement. Si vous voulez une clé pour un environnement de production ou si vous voulez publier votre extension, il faudra contacter Giphy pour avoir votre propre clé. Vous trouverez tous les détails [dans la documentation de l'API](https://github.com/giphy/GiphyAPI).
 
@@ -149,7 +149,7 @@ Créez `newtab.js` et `newtab.css` dans votre dossier, puis incluez-les dans vot
 
 **newtab.html**
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -161,19 +161,19 @@ Créez `newtab.js` et `newtab.css` dans votre dossier, puis incluez-les dans vot
     <script src="newtab.js"></script>
   </body>
 </html>
-{% endhighlight %}
+```
 
 **newtab.css**
 
-{% highlight css %}
+```css
 body {
   background-size: cover;
 }
-{% endhighlight %}
+```
 
 **newtab.js**
 
-{% highlight javascript %}
+```javascript
 fetch('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cat', {
 	method: 'get'
 }).then(function(response) {
@@ -183,7 +183,7 @@ fetch('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cat', {
 }).catch(function(err) {
 	console.log('Error:', err);
 });
-{% endhighlight %}
+```
 
 J'ai utilisé la méthode [fetch](https://fetch.spec.whatwg.org/) ainsi que les [template strings](https://developers.google.com/web/updates/2015/01/ES6-Template-Strings) d'ECMAScript 6.
 
