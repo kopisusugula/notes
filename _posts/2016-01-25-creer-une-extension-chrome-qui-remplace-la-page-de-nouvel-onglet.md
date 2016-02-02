@@ -175,13 +175,13 @@ body {
 
 ```javascript
 fetch('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cat', {
-	method: 'get'
+  method: 'get'
 }).then(function(response) {
   return response.json();
 }).then(function(json) {
   document.body.style.backgroundImage = `url('${json.data.image_url}')`;
 }).catch(function(err) {
-	console.log('Error:', err);
+  console.log('Error:', err);
 });
 ```
 
