@@ -12,11 +12,16 @@ markdown: kramdown
 kramdown:
   input: GFM
 permalink: /:title/
-exclude: ["README.md", "Gemfile", "Gemfile.lock"]
+exclude: ["README.md", "Gemfile", "Gemfile.lock", "vendor"]
 sass:
   style: compressed
 gems:
+  - algoliasearch-jekyll
   - jekyll-sitemap
+algolia:
+  application_id: '2MO0TDI0YD'
+  index_name: 'notes'
+  record_css_selector: 'p,ul'
 defaults:
   -
     scope:

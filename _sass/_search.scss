@@ -1,0 +1,45 @@
+.search {
+  display: table;
+  width: 100%;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.search__input {
+  display: table-cell;;
+  border: 1px solid #eee;
+  font-size: 1rem;
+  padding: .5rem .75rem;
+  border-radius: .25rem;
+  margin: 0 auto;
+  width: 100%;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.search__powered {
+  display: table-cell;
+  width: 5.25rem;
+  min-width: 5.25rem;
+  text-align: right;
+  font-size: 0.85rem;
+  vertical-align: middle;
+  opacity: .75;
+}
+
+.search__link {
+  &:hover {
+    border: 0;
+  }
+}
+
+.search__algolia {
+  height: 1rem;
+}
+
+.algolia__result-highlight {
+  background-color: #ff6;
+}

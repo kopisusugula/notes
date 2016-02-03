@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<ul class="post-list">
+<ul class="post-list" id="post-list">
   {% for post in site.posts %}
     <li class="post-list__item {% if post.path contains '_drafts' %}post-list__item--faded{% endif %}">
       <div class="post-list__category">
@@ -19,3 +19,12 @@ layout: default
     </li>
   {% endfor %}
 </ul>
+
+<aside class="search" id="search">
+  <input type="text" autocomplete="off" name="query" placeholder="Rechercher..." id="query" class="search__input" />
+  <span class="search__powered">Par <a href="https://www.algolia.com/" target="_blank" rel="nofollow" class="search__link"><img src="/assets/img/algolia@2x.png" alt="Search by Algolia" class="search__algolia" /></a></span>
+</aside>
+
+<script src="/assets/js/lodash.min.js"></script>
+<script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script src="/assets/js/search.js"></script>
