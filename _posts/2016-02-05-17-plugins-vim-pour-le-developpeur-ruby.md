@@ -9,7 +9,7 @@ image: /uploads/2016-02-05-17-plugins-vim-pour-le-developpeur-ruby/vim-test.gif
 
 VIM est un éditeur de texte très puissant et très apprécié de la communauté des Rubyistes. En revanche, par défaut, il peut lui manquer certaines fonctionnalités indispensables. Heureusement il est possible d'installer des plugins pour combler nos besoins.
 
-Dans cet article nous allons découvrir 17 plugins qui pourront vous faire gagner du temps et rendre l'utilisation de VIM plus agréable.
+Dans cet article vous découvrirez 17 plugins qui pourront vous faire gagner du temps et rendre l'utilisation de VIM plus agréable.
 
 ## vim-plug
 
