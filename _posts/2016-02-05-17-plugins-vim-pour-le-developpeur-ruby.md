@@ -226,7 +226,7 @@ Un simple `-` permet d'ouvrir l'arborescence et de naviguer dedans:
 
 ## vim-multiple-cursors
 
-J'utilise aussi _Sublime Text_ ou _Atom_ et j'ai pris l'habitude les curseurs multiples. Heureusement il existe [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) qui permet d'obtenir un comportement similaire:
+J'utilise aussi _Sublime Text_ ou _Atom_ et j'ai pris l'habitude d'utiliser les curseurs multiples. Heureusement il existe [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) qui permet d'obtenir un comportement similaire:
 
 ![VIM multiple cursors](/uploads/2016-02-05-17-plugins-vim-pour-le-developpeur-ruby/vim-multiple-cursors-1.gif)
 
