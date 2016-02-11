@@ -10,8 +10,8 @@
   display: table;
   width: 100%;
   border-bottom: 1px solid #f1f1f1;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
 
   &:last-child {
     border-bottom: 0;
@@ -20,8 +20,8 @@
   }
 
   @media screen and (max-width: $content-width) {
-    padding-bottom: .75rem;
-    margin-bottom: .75rem;
+    padding-bottom: .75em;
+    margin-bottom: .75em;
   }
 }
 
@@ -32,20 +32,20 @@
 .post-list__category {
   display: table-cell;
   vertical-align: middle;
-  width: 4rem;
+  width: 4em;
 
   @media screen and (max-width: $content-width) {
-    width: 3rem;
+    width: 3em;
   }
 }
 
 .post-list__icon {
-  width: 3rem;
-  height: 3rem;
+  width: 3em;
+  height: 3em;
 
   @media screen and (max-width: $content-width) {
-    width: 2rem;
-    height: 2rem;
+    width: 2em;
+    height: 2em;
   }
 }
 
@@ -57,33 +57,28 @@
 .post-list__title {
   margin: 0;
   margin-bottom: 0;
-  font-size: 1.25rem;
+  font-size: 1.25em;
 
   @media screen and (max-width: $content-width) {
-    font-size: 1rem;
+    font-size: 1em;
   }
 }
 
 .post-list__link {
   color: #333;
-  font-size: 1.25rem;
 
   &:hover {
     text-decoration: none;
     background-color: #ff6;
     border: 0;
   }
-
-  @media screen and (max-width: $content-width) {
-    font-size: 1rem;
-  }
 }
 
 .post-list__meta {
   color: #999;
-  font-size: .95rem;
+  font-size: .95em;
 
   @media screen and (max-width: $content-width) {
-    font-size: .85rem;
+    font-size: .85em;
   }
 }

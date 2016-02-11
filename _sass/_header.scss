@@ -1,23 +1,24 @@
 .header {
   text-align: center;
   border-bottom: 1px solid #eee;
-  padding: 2.5rem 0;
-  margin-bottom: 2rem;
+  padding: 2.5em 0;
+  margin-bottom: 2em;
 
   @media screen and (max-width: $content-width) {
-    padding: 1.5rem 0;
-    margin-bottom: 1.75rem;
+    padding: 1.5em 0;
+    margin-bottom: 1.75em;
   }
 }
 
 .header__title {
   margin: 0;
+  font-size: 1em;
 }
 
 .header__logo {
   display: inline-block;
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 4.5em;
+  width: 4.5em;
   text-indent: -9999px;
 
   background-size: cover;
@@ -30,7 +31,7 @@
   }
 
   @media screen and (max-width: $content-width) {
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 3.5em;
+    width: 3.5em;
   }
 }

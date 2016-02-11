@@ -29,7 +29,7 @@ body {
   word-wrap: break-word;
 
   @media screen and (max-width: $content-width) {
-    font-size: 1rem;
+    font-size: 1em;
   }
 }
 
@@ -73,45 +73,37 @@ a {
   text-decoration: none;
 
   &:hover {
-    border-bottom: .08rem solid $link-color;
+    border-bottom: 1px solid $link-color;
   }
 }
 
 blockquote {
   color: #999;
-  border-left: .25rem solid #d0d0d0;
+  border-left: .25em solid #d0d0d0;
   padding-left: $spacing-unit / 2;
-  font-size: 1.25rem;
+  font-size: 1.125em;
   font-style: italic;
 
   > :last-child {
     margin-bottom: 0;
   }
-
-  @media screen and (max-width: $content-width) {
-    font-size: 1.125rem;
-  }
 }
 
 pre,
 code {
-  font-size: .95rem;
-  border-radius: .25rem;
+  font-size: .9em;
+  border-radius: .25em;
   background: #F9F9FA;
   border: 1px solid rgba(51,51,51,.1);
   font-family: 'Source Code Pro', Menlo, Consolas, Monaco, monospace;
-
-  @media screen and (max-width: $content-width) {
-    font-size: 0.85rem;
-  }
 }
 
 code {
-  padding: 0.125rem 0.3125rem;
+  padding: 0.125em 0.3125em;
 }
 
 pre {
-  padding: 0.5rem 0.75rem;
+  padding: 0.5em 0.75em;
   overflow-x: auto;
   word-wrap: normal;
 
@@ -127,7 +119,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: #EFEFEF 1px solid;
-  margin: 2rem 0;
+  margin: 2em 0;
   padding: 0;
 }
 

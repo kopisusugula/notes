@@ -6,19 +6,19 @@
 
 .soc__item {
   display: inline-block;
-  margin: 0 .25rem;
+  margin: 0 .25em;
 
   @media screen and (max-width: $content-width) {
     display: block;
-    margin: 1.5rem 0;
+    margin: 1.5em 0;
   }
 }
 
 .soc__link {
   display: block;
   color: #fff;
-  font-size: .85rem;
-  padding: .25rem .5rem;
+  font-size: .85em;
+  padding: .25em .5em;
   border-radius: 4px;
   line-height: 1;
 
@@ -32,8 +32,8 @@
 .soc__icon {
   display: inline-block;
   vertical-align: middle;
-  font-size: 1.25rem;
-  margin-right: .35rem;
+  font-size: 1.25em;
+  margin-right: .35em;
 }
 
 .soc__link--twitter {

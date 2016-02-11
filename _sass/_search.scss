@@ -1,22 +1,22 @@
 .search {
   display: table;
   width: 100%;
-  margin-top: 2rem;
-  padding-top: 2rem;
+  margin-top: 2em;
+  padding-top: 2em;
   border-top: 1px solid #eee;
 
   @media screen and (max-width: $content-width) {
-    margin-top: 1.75rem;
-    padding-top: 1.75rem;
+    margin-top: 1.75em;
+    padding-top: 1.75em;
   }
 }
 
 .search__input {
   display: table-cell;;
   border: 1px solid #ddd;
-  font-size: 1rem;
-  padding: .5rem .75rem;
-  border-radius: .25rem;
+  font-size: 1em;
+  padding: .5em .75em;
+  border-radius: .25em;
   margin: 0 auto;
   width: 100%;
 
@@ -27,10 +27,10 @@
 
 .search__powered {
   display: table-cell;
-  width: 5.25rem;
-  min-width: 5.25rem;
+  width: 5.25em;
+  min-width: 5.25em;
   text-align: right;
-  font-size: 0.85rem;
+  font-size: 0.85em;
   vertical-align: middle;
   opacity: .75;
 }
@@ -42,7 +42,7 @@
 }
 
 .search__algolia {
-  height: 1rem;
+  height: 1em;
 }
 
 .algolia__result-highlight {
