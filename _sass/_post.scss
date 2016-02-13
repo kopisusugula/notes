@@ -3,33 +3,33 @@
 }
 
 .post__header {
-  margin-bottom: 2.5em;
-  padding-bottom: 2.5em;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #eee;
   text-align: center;
 
   @media screen and (max-width: $content-width) {
-    margin-bottom: 1.25em;
-    padding-bottom: 1.25em;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 }
 
 .post__title {
-  margin: 0 0 .5em 0;
-  font-size: 2.25em;
+  margin: 0 0 15px 0;
+  font-size: 36px;
 
   @media screen and (max-width: $content-width) {
-    font-size: 1.5em;
+    font-size: 24px;
   }
 }
 
 .post__meta {
   color: #9F9F9F;
-  font-size: 1em;
+  font-size: 16px;
   margin: 0;
 
   @media screen and (max-width: $content-width) {
-    font-size: .85em;
+    font-size: 14px;
   }
 }
 
@@ -39,30 +39,30 @@
   &:after {
     display: inline;
     content: '–';
-    margin: 0 0.5em;
+    margin: 0 8px;
   }
 }
 
 .post__author-pic {
   display: inline-block;
-  width: 1.75em;
-  height: 1.75em;
-  border-radius: 1.75em;
+  width: 28px;
+  height: 28px;
+  border-radius: 28px;
   vertical-align: middle;
 }
 
 .post__content {
-  font-size: 1.125em;
+  font-size: 18px;
 
   h2 {
-    margin-top: 2em;
+    margin-top: 45px;
   }
 
   img {
     display: block;
     max-width: 126%;
     height: auto;
-    padding: 0.6em 0;
+    padding: 8px 0;
     position: relative;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -71,22 +71,22 @@
 
     @media screen and (max-width: $content-width) {
       padding: 0;
-      width: calc(100% + 2em);
+      width: calc(100% + 32px);
       min-width: 0;
       max-width: 112%;
     }
   }
 
   @media screen and (max-width: $content-width) {
-    font-size: 1em;
+    font-size: 16px;
   }
 }
 
 .post__footer {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
-  margin: 2em 0;
-  padding: 1.5em 0;
+  margin: 32px 0;
+  padding: 24px 0;
 }
 
 .post__anchor {

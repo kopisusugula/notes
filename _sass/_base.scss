@@ -27,10 +27,6 @@ body {
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   word-wrap: break-word;
-
-  @media screen and (max-width: $content-width) {
-    font-size: 1em;
-  }
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -79,9 +75,9 @@ a {
 
 blockquote {
   color: #999;
-  border-left: .25em solid #d0d0d0;
+  border-left: 4px solid #d0d0d0;
   padding-left: $spacing-unit / 2;
-  font-size: 1.125em;
+  font-size: 18px;
   font-style: italic;
 
   > :last-child {
@@ -91,19 +87,23 @@ blockquote {
 
 pre,
 code {
-  font-size: .9em;
-  border-radius: .25em;
+  font-size: 15px;
+  border-radius: 4px;
   background: #F9F9FA;
   border: 1px solid rgba(51,51,51,.1);
   font-family: 'Source Code Pro', Menlo, Consolas, Monaco, monospace;
+
+  @media screen and (max-width: $content-width) {
+    font-size: 14px;
+  }
 }
 
 code {
-  padding: 0.125em 0.3125em;
+  padding: 2px 5px;
 }
 
 pre {
-  padding: 0.5em 0.75em;
+  padding: 8px 12px;
   overflow-x: auto;
   word-wrap: normal;
 
@@ -118,8 +118,8 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: #EFEFEF 1px solid;
-  margin: 2em 0;
+  border-top: 1px solid #EFEFEF;
+  margin: 32px 0;
   padding: 0;
 }
 
