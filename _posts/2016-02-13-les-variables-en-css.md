@@ -60,8 +60,8 @@ Les variables n'échappent pas à l'héritage en cascade. Voici un petit exemple
 }
 ```
 
-- **Texte 1** sera en **rouge**: il prend la couleur définie dans `:root`
-- **Texte 2** sera en **bleu**: une nouvelle couleur à écrasé la précédente dans `.b`, `.c` est à l'intérieur de `.b` donc il hérite de ce changement
+- **Texte 1** sera en **rouge**: il prend la valeur définie dans `:root`
+- **Texte 2** sera en **bleu**: une nouvelle valeur a écrasé la précédente dans `.b`, `.c` est à l'intérieur de `.b` donc il hérite de ce changement
 
 ## Support
 
