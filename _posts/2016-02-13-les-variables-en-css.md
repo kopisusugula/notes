@@ -7,7 +7,7 @@ permalink: /les-variables-en-css/
 image: /uploads/2016-02-13-les-variables-en-css/support.png
 ---
 
-Jusqu'à présent il était impossible de déclarer des variables en CSS. Pour contrer ce problème, on pouvait utiliser des préprocesseurs comme [Sass](http://sass-lang.com/) ou [less](http://lesscss.org/). Les variables "natives" commencent à peine à faire leur apparition et nous allons voir comment les utiliser.
+Jusqu'à présent il était impossible de déclarer des variables en CSS. Pour contrer ce problème on pouvait utiliser des préprocesseurs comme [Sass](http://sass-lang.com/) ou [less](http://lesscss.org/). Les variables "natives" commencent à peine à faire leur apparition et nous allons voir comment les utiliser.
 
 ## Syntaxe
 
