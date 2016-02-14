@@ -1,37 +1,39 @@
 .header {
-  text-align: center;
   border-bottom: 1px solid #eee;
-  padding: 40px 0;
+  padding: 20px 0;
   margin-bottom: 40px;
 
   @media screen and (max-width: $content-width) {
-    padding: 24px 0;
+    padding: 18px 10px;
     margin-bottom: 28px;
   }
 }
 
 .header__title {
+  display: inline-block;
   margin: 0;
-  font-size: 16px;
+  font-size: 23px;
+
+  @media screen and (max-width: $content-width) {
+    font-size: 20px;
+  }
 }
 
 .header__logo {
   display: inline-block;
-  height: 72px;
-  width: 72px;
-  text-indent: -9999px;
-
-  background-size: cover;
-  background-image: url('../img/logo.png');
-  background-position: center;
-  background-repeat: no-repeat;
+  font-size: 23px;
+  font-weight: 900;
+  line-height: 1.25;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -1px;
+  color: #333;
 
   &:hover {
+    background-color: #ff6;
     border: 0;
   }
 
   @media screen and (max-width: $content-width) {
-    height: 56px;
-    width: 56px;
+    font-size: 20px;
   }
 }

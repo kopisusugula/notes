@@ -26,8 +26,9 @@
   };
 
   var displayResults = function(content) {
-    var compiled = _.template('<% _.forEach(hits, function(hit) { %><li class="post-list__item"><div class="post-list__category"><a href="<%= hit.url %>"><img src="/assets/img/categories/<%= hit.category %>.png" alt="<%= hit.category %>" class="post-list__icon" /></a></div><div class="post-list__details"><h2 class="post-list__title"><a class="post-list__link" href="<%= hit.url %>"><%= hit._highlightResult.title.value %></a></h2><span class="post-list__meta"><%= hit._highlightResult.text.value %></span></div></li><% }); %>');
-    postList.innerHTML = compiled({ 'hits': content.hits });
+    var pluralize = (content.nbHits > 1) ? 'résultats' : 'résultat';
+    var compiled = _.template('<li class="search__results"><span class="search__count"><%= nbHits %> <%= pluralize %></span><span class="search__powered">Par <a href="https://www.algolia.com/" target="_blank" rel="nofollow" class="search__link"><img src="/assets/img/algolia@2x.png" alt="Search by Algolia" class="search__algolia" /></a></span></li><% _.forEach(hits, function(hit) { %><li class="post-list__item"><div class="post-list__category"><a href="<%= hit.url %>"><img src="/assets/img/categories/<%= hit.category %>.png" alt="<%= hit.category %>" class="post-list__icon" /></a></div><div class="post-list__details"><h2 class="post-list__title"><a class="post-list__link" href="<%= hit.url %>"><%= hit._highlightResult.title.value %></a></h2><span class="post-list__meta"><%= hit._highlightResult.text.value %></span></div></li><% }); %>');
+    postList.innerHTML = compiled({ 'hits': content.hits, 'nbHits': content.nbHits, 'pluralize': pluralize });
   };
 
   query.onkeyup = onQueryChange;
