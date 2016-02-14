@@ -69,7 +69,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    border-bottom: 1px solid $link-color;
+    border-bottom: 2px solid lighten($link-color, 25);
   }
 }
 
