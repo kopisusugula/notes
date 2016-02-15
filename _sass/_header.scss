@@ -1,4 +1,6 @@
 .header {
+  @extend %clearfix;
+
   border-bottom: 1px solid #eee;
   padding: 20px 0;
   margin-bottom: 40px;
@@ -11,6 +13,7 @@
 
 .header__title {
   display: inline-block;
+  float: left;
   margin: 0;
   font-size: 23px;
 
@@ -21,6 +24,7 @@
 
 .header__logo {
   display: inline-block;
+  float: left;
   font-size: 23px;
   font-weight: 900;
   line-height: 1.25;
