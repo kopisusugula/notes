@@ -147,7 +147,7 @@ La clé d'API `dc6zaTOxFJmzC` est publique. Elle doit être utilisée uniquement
 
 Créez `newtab.js` et `newtab.css` dans votre dossier, puis incluez-les dans votre `newtab.html`.
 
-**newtab.html**
+_newtab.html_
 
 ```html
 <!DOCTYPE html>
@@ -163,7 +163,7 @@ Créez `newtab.js` et `newtab.css` dans votre dossier, puis incluez-les dans vot
 </html>
 ```
 
-**newtab.css**
+_newtab.css_
 
 ```css
 body {
@@ -171,7 +171,7 @@ body {
 }
 ```
 
-**newtab.js**
+_newtab.js_
 
 ```javascript
 fetch('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cat', {

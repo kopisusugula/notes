@@ -23,7 +23,7 @@ Dans un nouveau dossier, exécutez `npm init` afin de générer un `package.json
 - ajouter `"preferGlobal": true`, de cette manière un avertissement sera affiché si on installe le module sans l'option `--global`.
 - ajouter l'entrée `"bin": {"nom-de-commande": "fichier.js"}`. Lors de l'installation de notre package, la commande `nom-de-commande` sera installée et exécutera le fichier `fichier.js`. Vous pouvez ajouter d'autres couples "commande/fichier" dans `"bin"`.
 
-**package.json**
+_package.json_
 
 ```json
 {
@@ -42,7 +42,7 @@ Dans un nouveau dossier, exécutez `npm init` afin de générer un `package.json
 }
 ```
 
-**fichier.js**
+_fichier.js_
 
 ```javascript
 #!/usr/bin/env node
@@ -141,7 +141,7 @@ Les _pipes_ ou plutôt les `|`, sont l'un des éléments qui rendent la ligne de
 
 Actuellement, que se passe t-il si on envoie des informations en entrée via un _pipe_ ?
 
-**fichier.js**
+_fichier.js_
 
 ```javascript
 #!/usr/bin/env node
@@ -155,7 +155,7 @@ $ echo "foo" | nom-de-commande
 
 Il ne se passe rien car on ne fait rien avec l'information passée par le `|`. Nous devons écouter le flux d'entrée standard et traiter ce que l'on reçoit.
 
-**fichier.js**
+_fichier.js_
 
 ```javascript
 #!/usr/bin/env node
@@ -195,7 +195,7 @@ Vous trouverez plus d'informations dans [la documentation de `process.stdin`](ht
 
 Nous venons de voir comment traiter l'information que l'on envoie sur l'entrée (`stdin`). Nous n'avons pas besoin de faire quoi que ce soit pour traiter l'information en sortie (`stdout`), à part envoyer de l'information sur la sortie.
 
-**fichier.js**
+_fichier.js_
 
 ```javascript
 #!/usr/bin/env node
