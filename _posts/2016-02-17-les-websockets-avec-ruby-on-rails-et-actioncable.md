@@ -416,8 +416,6 @@ Cet article est inspiré de [la vidéo de présentation d'ActionCable](https://w
 
 Rails 5 n'est pas encore sorti en version finale, ce qui signifie qu'il peut y avoir des changements d'ici là. Cela reste peu probable mais il vaut mieux regarder régulièrement la documentation pour vous tenir informé des éventuels modifications.
 
-
-
 ## Resources
 
 - [https://www.youtube.com/watch?v=n0WUjGkDFS0](Resources)
