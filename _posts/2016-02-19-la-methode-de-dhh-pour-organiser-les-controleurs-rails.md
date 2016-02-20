@@ -82,3 +82,7 @@ class Inboxes::DraftsController < ApplicationController
   end
 end
 ```
+
+Voici un transcript de la partie où il en parle, à partir de [50:15](http://www.fullstackradio.com/32):
+
+> What I've come to embrace is that being almost fundamentalistic about when I create a new controller to stay adherent to REST has served me better every single time. Every single time I've regretted the state of my controllers is because I've had to few of them. I've been trying to overload too heavily [...]. The heuristic I use to drive that is whenever I have a method in a controller that's not part of the default five or whatever REST actions that we have by default: make a new controller. Let's say you have an "inbox" controller and you have an "index" that shows everything that's in the inbox and then you might have an action like "I wanna see the pending emails", so you add an action called "pending", that's a common pattern, right ? And a pattern that I used to follow more. And now I go no no no: have a new controller that's called Inboxes::PendingsController that just has a single method called "index". And what I found is that the freedom that gives you is that each controller now has its own scope with its own set of filters that apply [...]. Let's say we have a MessagesController and below that MessagesController when might have a Messages::DraftsController and we might have a Messages::TrashesController and we might have all these others controllers and all these others subresources within the same thing. That's been a huge success.
