@@ -3,7 +3,7 @@ layout: post
 title: La méthode de DHH pour organiser les contrôleurs Rails
 date: 2016-02-19 23:00
 category: ruby
-parmalink: /la-methode-de-dhh-pour-organiser-les-controleurs-rails/
+permalink: /la-methode-de-dhh-pour-organiser-les-controleurs-rails/
 image: /uploads/2016-02-20-la-methode-de-dhh-pour-organiser-les-controleurs-rails/basecamp3.png
 ---
 
