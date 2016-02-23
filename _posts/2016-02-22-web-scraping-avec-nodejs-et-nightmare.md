@@ -220,7 +220,7 @@ Disponible
 - Le formulaire de connexion est situé à l'adresse: [https://www.paypal.com/signin/?country.x=FR&locale.x=fr_FR](https://www.paypal.com/signin/?country.x=FR&locale.x=fr_FR).
 - On entre l'email client dans l'input `#email`.
 - On entre le mot de passe dans l'input `#password`.
-- On clique sur le bouton "Connexion" qui a la class `#btnLogin`.
+- On clique sur le bouton "Connexion" qui a la classe `#btnLogin`.
 - On attend jusqu'à ce que le lien "Déconnexion" apparaisse: `.nemo_logoutBtn`. Si ce lien est présent cela signifie que l'on est forcément connecté.
 - Nous sommes directement sur la page qui contient notre solde. On peut le récupérer avec: `document.getElementsByClassName('balanceNumeral')[0].innerText`.
 
