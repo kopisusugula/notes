@@ -66,6 +66,8 @@ Puis installez Nightmare. Nous allons également utiliser [vo](https://github.co
 $ npm install nightmare vo --save
 ```
 
+Dans cet article, j'ai utilisé la version 2.1.6 de Nightmare.
+
 ## Utilisation basique
 
 Pour commencer, nous allons faire un script qui va récupérer le prix d'une location sur Airbnb.
