@@ -12,7 +12,11 @@ markdown: kramdown
 kramdown:
   input: GFM
 permalink: /:title/
-exclude: ["README.md", "Gemfile", "Gemfile.lock", "vendor"]
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
 sass:
   style: compressed
 gems:
