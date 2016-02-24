@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Web Scraping avec NodeJS et Nightmare
-date: 2016-02-22 21:00
 category: nodejs
 permalink: /web-scraping-avec-nodejs-et-nightmare/
 image: /uploads/2016-02-22-web-scraping-avec-nodejs-et-nightmare/google.gif

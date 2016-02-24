@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Les variables en CSS
-date: 2016-02-12 22:00
 category: css
 permalink: /les-variables-en-css/
 image: /uploads/2016-02-13-les-variables-en-css/support.png

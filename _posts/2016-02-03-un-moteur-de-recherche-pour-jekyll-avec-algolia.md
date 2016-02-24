@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Un moteur de recherche pour Jekyll avec Algolia
-date: 2016-02-03 09:00
 category: jekyll
 permalink: /un-moteur-de-recherche-pour-jekyll-avec-algolia/
 image: /uploads/2016-02-03-un-moteur-de-recherche-pour-jekyll-avec-algolia/algolia.png

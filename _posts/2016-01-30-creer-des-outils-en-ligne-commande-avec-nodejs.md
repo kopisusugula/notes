@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Créer des outils en ligne de commande avec NodeJS
-date: 2016-01-30 21:30
 category: nodejs
 permalink: /creer-des-outils-en-ligne-commande-avec-nodejs/
 image: /uploads/2016-01-30-creer-des-outils-en-ligne-commande-avec-nodejs/blessed-contrib.gif

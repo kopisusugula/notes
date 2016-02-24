@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Détecter la perte de connexion Internet en Javascript
-date: 2016-01-19 21:30
 category: javascript
 permalink: /detecter-perte-connexion-internet-javascript/
 image: /uploads/2016-01-19-detecter-perte-connexion-internet-javascript/browser-support.png

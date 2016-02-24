@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 17 plugins VIM pour le développeur Ruby
-date: 2016-02-05 15:00
 category: vim
 permalink: /17-plugins-vim-pour-le-developpeur-ruby/
 image: /uploads/2016-02-05-17-plugins-vim-pour-le-developpeur-ruby/vim-test.gif

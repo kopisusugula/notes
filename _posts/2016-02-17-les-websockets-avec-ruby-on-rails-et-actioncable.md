@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Les WebSockets avec Ruby On Rails et ActionCable
-date: 2016-02-17 15:00
 category: ruby
 permalink: /les-websockets-avec-ruby-on-rails-et-actioncable/
 image: /uploads/2016-02-17-les-websockets-avec-ruby-on-rails-et-actioncable/status-console.gif

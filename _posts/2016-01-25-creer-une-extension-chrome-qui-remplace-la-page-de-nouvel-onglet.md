@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Créer une extension Chrome qui remplace la page de nouvel onglet
-date: 2016-01-25 02:30
 category: chrome
 permalink: /creer-une-extension-chrome-qui-remplace-la-page-de-nouvel-onglet/
 image: /uploads/2016-01-25-creer-une-extension-chrome-qui-remplace-la-page-de-nouvel-onglet/premier-resultat.png
