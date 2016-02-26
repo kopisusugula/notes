@@ -417,7 +417,7 @@ Rails 5 n'est pas encore sorti en version finale, ce qui signifie qu'il peut y a
 
 ## Resources
 
-- [https://www.youtube.com/watch?v=n0WUjGkDFS0](Resources)
+- [https://www.youtube.com/watch?v=n0WUjGkDFS0](https://www.youtube.com/watch?v=n0WUjGkDFS0)
 - [http://hectorperezarenas.com/2015/12/26/rails-5-tutorial-how-to-create-a-chat-with-action-cable/](http://hectorperezarenas.com/2015/12/26/rails-5-tutorial-how-to-create-a-chat-with-action-cable/)
 - [http://weblog.rubyonrails.org/2015/12/18/Rails-5-0-beta1/](http://weblog.rubyonrails.org/2015/12/18/Rails-5-0-beta1/)
 - [https://github.com/rails/rails/tree/master/actioncable](https://github.com/rails/rails/tree/master/actioncable)
