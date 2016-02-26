@@ -32,16 +32,16 @@
 .post-list__category {
   display: table-cell;
   vertical-align: middle;
-  width: 64px;
+  width: 48px;
 
   @media screen and (max-width: $content-width) {
-    width: 48px;
+    width: 42px;
   }
 }
 
 .post-list__icon {
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
 
   @media screen and (max-width: $content-width) {
     width: 32px;
